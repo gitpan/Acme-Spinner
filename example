@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+#
+
+use Time::HiRes qw ( sleep );
+use Acme::Spinner;
+
+my $s = Acme::Spinner->new();
+
+while(<>) {
+    print STDERR $s->next(). "\r";
+    sleep(0.05);
+}
