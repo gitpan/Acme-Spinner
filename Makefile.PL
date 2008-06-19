@@ -1,12 +1,16 @@
-use 5.008;
+use strict;
+use warnings;
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+
 WriteMakefile(
-    'NAME'		=> 'Acme::Spinner',
-    'VERSION_FROM'	=> 'Spinner.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM => 'Spinner.pm', # retrieve abstract from module
-       AUTHOR     => 'Chris Fedde <cfedde@littleton.co.us>') : ()),
+    NAME                => 'Acme::Spinner',
+    AUTHOR              => 'Chris Fedde <cfedde at cpan.org>',
+    VERSION_FROM        => 'lib/Acme/Spinner.pm',
+    ABSTRACT_FROM       => 'lib/Acme/Spinner.pm',
+    PL_FILES            => {},
+    PREREQ_PM => {
+        'Test::More' => 0,
+    },
+    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    clean               => { FILES => 'Acme-Spinner-*' },
 );

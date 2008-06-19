@@ -1,30 +1,44 @@
-Acme/Spinner version 0.01
-=========================
+Acme-Spinner
 
-This is a little toy module. Mostly to get me familiar with using PAUSE.
-It provides one of those little whorly slash things.  It also encapsulates
-'y' and 'x' properties that might be useful if it is used with Curses.
+This is a simple module that helps manage one of those silly spinning
+bar things that some programs use when they want you to think they
+are busy.
 
 INSTALLATION
 
-To install this module type the following:
+To install this module, run the following commands:
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+	perl Makefile.PL
+	make
+	make test
+	make install
 
-DEPENDENCIES
+SUPPORT AND DOCUMENTATION
 
-There are no module dependencies for the use of this module other than Perl
-itself.
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Acme::Spinner
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Acme-Spinner
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Acme-Spinner
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Acme-Spinner
+
+    Search CPAN
+        http://search.cpan.org/dist/Acme-Spinner
+
 
 COPYRIGHT AND LICENCE
 
-This code is provided in the hope that it will be useful but does not
-represent any commitment on the part of the author, his agents,
-or any other organization.
+Copyright (C) 2008 Chris Fedde
 
-This version of this module is granted to the public domain.
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
 
-Copyright (C) 2003 Chris Fedde
